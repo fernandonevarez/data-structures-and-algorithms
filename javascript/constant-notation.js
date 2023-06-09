@@ -25,3 +25,46 @@ const logFirstTwoBox = (arr) => {
 };
 
 logFirstTwoBox(boxes); // O(2)
+
+// ~~~~~~~~~~ Practice ~~~~~~~~~~
+
+// What is the Big O of the below function? (Hint, you may want to go line by line)
+
+const funChallenge = (arr) => {
+  let num = 43;
+  num = 75 + 9;
+
+  for (let i = 0; i < arr.length; i++) {
+    anotherFunction();
+    let status = true;
+    a++;
+  }
+  return a;
+};
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~ Answer Below ~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/*
+const funChallenge = (input) => {
+  let a = 10; // O(1)
+  a = 50 + 3; // O(1)
+
+  for (let i = 0; i < input.length; i++) {
+    // O(n)
+    anotherFunction(); // O(n)
+    let stranger = true; // O(n)
+    a++; // O(n)
+  }
+  return a; // O(1)
+};
+*/
+
+// when everything is added up, you should get 1 + 1 + 1 + n + n + n + n =  3 + 4n = 4n = n
+
+// Answer: O(n)
