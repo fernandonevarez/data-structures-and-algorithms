@@ -21,6 +21,23 @@ const getPairEqualToSum = (arr, sum) => {
 
 getPairEqualToSum(arr2, sum);
 
+// Better Solution
+
+const haspairwithSum = (arr, sum) => {
+  const set = new Set();
+  const len = arr.length;
+
+  for (let i = 0; i < len; i++) {
+    if (set.has(arr[i])) {
+      return true;
+    }
+    set.add(sum - arr[i]);
+  }
+  return false;
+};
+
+console.log(haspairwithSum(arr2, sum));
+
 /*
 TIPS FROM THE VIDEO:
 
