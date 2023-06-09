@@ -15,3 +15,7 @@ We can measure the scalability of our code using Big O Notation. This notation h
 ![Big O Notation Chart](.github/note_images/big-o-notation.png)
 
 This chart helps to Visualize how when a function's input size increases, the number of operations required to complete the function increases ultimately increasing the time it takes to complete the function and create a complexity curve that can be used to determine the Big O Notation of the function.
+
+### The Different Types of Big O Notation
+
+When we talk about big o notation, most of the time we are thinking and talking about the same thing and that's Big O. But there are actually different types of big o notation(like big oh, big omega, and big theta notations) and you can learn more about them [here](https://www.quora.com/What-is-the-difference-between-big-oh-big-omega-and-big-theta-notations).
