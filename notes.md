@@ -1,0 +1,11 @@
+## What is good code?
+
+When talking about what is considered good code, there are two main things we think about, readability and scalability.
+
+When evaluating the quality of code, the primary factor we consider is its cleanliness and readability. It is crucial for other developers to comprehend the code and its intended purpose within the program. While comments can aid in understanding, it is equally important to ensure the code itself is readable and easy to follow. Being a 'ninja coder' (someone who writes efficient but hard-to-understand code) is not beneficial for team projects. Therefore, prioritizing easy-to-understand code is essential.
+
+Furthermore, it is equally important to have code that is scalable. Top tech companies, seek developers who can write code that is not only readable but also scalable. Scalability ensures that the code can handle increased data loads, user traffic, and evolving requirements without significant performance degradation. Therefore, aspiring developers should strive for both readability and scalability in their code to meet the expectations of leading tech companies.
+
+## But how do I measure scalability?
+
+We can measure the scalability of our code using Big O Notation. This notation helps us analyze the performance characteristics and efficiency of algorithms, allowing us to understand how the code's execution time or space requirements grow as the input size increases. By evaluating the scalability of our code using Big O Notation, we can make informed decisions to optimize and improve its performance.
