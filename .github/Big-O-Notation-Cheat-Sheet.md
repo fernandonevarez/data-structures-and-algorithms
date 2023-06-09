@@ -2,6 +2,15 @@
 
 ---
 
+## Table of Contents
+
+- [Big Os](#big-os)
+- [Iterating through half a collection is still O(n)](#iterating-through-half-a-collection-is-still-on)
+- [Two separate collections: O(a + b)](#two-separate-collections-oa--b)
+- [What can cause time in a function](#what-can-cause-time-in-a-function)
+- [Rule Book](#rule-book)
+- [What can cause space complexity in a function?](#what-can-cause-space-complexity-in-a-function)
+
 ## Big Os
 
 - **O(1)**: Constant Time - No loops
@@ -142,5 +151,12 @@ array2.forEach((item) => {
 - Rule 2: Remove Constants
 - Rule 3: Different inputs should have different variables. O(a+b). A and B arrays nested would be O(a\*b)
 - Rule 4: Drop Non-dominant terms
+
+## **What can cause space complexity in a function?**
+
+variables
+Data Structures
+Function Call
+Allocations
 
 ---
