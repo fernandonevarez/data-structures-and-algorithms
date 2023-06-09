@@ -9,3 +9,9 @@ Furthermore, it is equally important to have code that is scalable. Top tech com
 ## But how do I measure scalability?
 
 We can measure the scalability of our code using Big O Notation. This notation helps us analyze the performance characteristics and efficiency of algorithms, allowing us to understand how the code's execution time or space requirements grow as the input size increases. By evaluating the scalability of our code using Big O Notation, we can make informed decisions to optimize and improve its performance.
+
+## Big O Notation
+
+![Big O Notation Chart](.github/note_images/big-o-notation.png)
+
+This chart helps to Visualize how when a function's input size increases, the number of operations required to complete the function increases ultimately increasing the time it takes to complete the function and create a complexity curve that can be used to determine the Big O Notation of the function.
