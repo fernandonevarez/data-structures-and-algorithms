@@ -41,3 +41,26 @@ const findNemo = (arr) => {
 };
 
 findNemo(largeArray); // O(n) => Linear Time
+
+/*
+Other ways to write the findNemo() function with different loops
+
+FOR EACH LOOP:
+const findNemo = (arr) => {
+  arr.forEach((fish) => {
+    if (fish === "nemo") {
+      console.log("found nemo!");
+    }
+  });
+};
+
+FOR OF LOOP:
+const findNemo = (arr) => {
+  for (fish of arr) {
+    if (fish === "nemo") {
+      console.log("found nemo!");
+    }
+  }
+};
+
+*/
