@@ -15,10 +15,19 @@ const mediamArray = [
 
 const largeArray = new Array(10000).fill("nemo");
 
+// ES5 function declaration syntax
+// function findNemo(arr) {
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] === "nemo") {
+//       console.log("found nemo!");
+//     }
+//   }
+// }
+
+// It's best pratice to use ES6 function declaration syntax
 const findNemo = (arr) => {
-  // I'm using ES6 function declaration syntax
-  for (const i = 0; i < arr.length; i++) {
-    if (arr[i].toLowercase() === "nemo") {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === "nemo") {
       console.log("found nemo!");
     }
   }
