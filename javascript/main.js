@@ -1,3 +1,10 @@
+/*
+Program explanation:
+  For the linear time Big O Notation function in this example, no matter how big the array is. When the array is passed into the findNemo() function, the function is going to loop through each item in the array to find if the "nemo" string is in the array and print out "found nemo!" whenever it runs into the string that matches "nemo".
+
+  This function counts as a linear time Big O Notation complexity because it has to loop through the whole array, regardless of its size. Therefore, the complexity curve will get bigger as the number of items in the array grows, causing a linear complexity curve.
+*/
+
 const smallArray = ["nemo"];
 
 const mediamArray = [
