@@ -1,3 +1,12 @@
+<div style="text-align: center; font-size: 50px">
+Big O Notation Notes
+</div>
+
+## Table of Contents
+
+- [What is good code?](#what-is-good-code?)
+- [Big O Notation](#big-o-notation)
+
 ## What is good code?
 
 When talking about what is considered good code, there are two main things we think about, readability and scalability.
@@ -6,11 +15,15 @@ When evaluating the quality of code, the primary factor we consider is its clean
 
 Furthermore, it is equally important to have code that is scalable. Top tech companies, seek developers who can write code that is not only readable but also scalable. Scalability ensures that the code can handle increased data loads, user traffic, and evolving requirements without significant performance degradation. Therefore, aspiring developers should strive for both readability and scalability in their code to meet the expectations of leading tech companies.
 
-## But how do I measure scalability?
+### **But how do I measure scalability?**
 
 We can measure the scalability of our code using Big O Notation. This notation helps us analyze the performance characteristics and efficiency of algorithms, allowing us to understand how the code's execution time or space requirements grow as the input size increases. By evaluating the scalability of our code using Big O Notation, we can make informed decisions to optimize and improve its performance.
 
+---
+
 ## Big O Notation
+
+---
 
 ![Big O Notation Chart](.github/note_images/big-o-notation.png)
 
