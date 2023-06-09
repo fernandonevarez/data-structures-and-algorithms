@@ -26,7 +26,7 @@ const logFirstTwoBox = (arr) => {
 
 logFirstTwoBox(boxes); // O(2)
 
-// ~~~~~~~~~~ Practice ~~~~~~~~~~
+// ~~~~~~~~~~ Practice 1 ~~~~~~~~~~
 
 // What is the Big O of the below function? (Hint, you may want to go line by line)
 
@@ -66,5 +66,54 @@ const funChallenge = (input) => {
 */
 
 // when everything is added up, you should get 1 + 1 + 1 + n + n + n + n =  3 + 4n = 4n = n
+
+// Answer: O(n)
+
+// ~~~~~~~~~~ Practice 2 ~~~~~~~~~~
+
+// What is the Big O of the below function? (Hint, you may want to go line by line)
+function anotherFunChallenge(input) {
+  let a = 5;
+  let b = 10;
+  let c = 50;
+  for (let i = 0; i < input; i++) {
+    let x = i + 1;
+    let y = i + 2;
+    let z = i + 3;
+  }
+  for (let j = 0; j < input; j++) {
+    let p = j * 2;
+    let q = j * 2;
+  }
+  let whoAmI = "I don't know";
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~ Answer Below ~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/*
+function anotherFunChallenge(input) {
+  let a = 5; // O(1)
+  let b = 10; // O(1)
+  let c = 50; // O(1)
+  for (let i = 0; i < input; i++) { // O(n)
+    let x = i + 1; // O(n)
+    let y = i + 2; // O(n)
+    let z = i + 3; // O(n)
+  }
+  for (let j = 0; j < input; j++) { // O(n)
+    let p = j * 2; // O(n)
+    let q = j * 2; // O(n)
+  }
+  let whoAmI = "I don't know"; // // O(1)
+}
+*/
+
+// when everything is added up, you should get 1 + 1 + 1 + 1 + n + n + n + n + n + n + n = 4 + 7n => 7n => n
 
 // Answer: O(n)
