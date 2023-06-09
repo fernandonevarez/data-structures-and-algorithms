@@ -18,4 +18,4 @@ This chart helps to Visualize how when a function's input size increases, the nu
 
 ### The Different Types of Big O Notation
 
-When we talk about big o notation, most of the time we are thinking and talking about the same thing and that's Big O. But there are actually different types of big o notation(like big oh, big omega, and big theta notations) and you can learn more about them [here](https://www.quora.com/What-is-the-difference-between-big-oh-big-omega-and-big-theta-notations).
+When we talk about big o notation, most of the time we are thinking and talking about the same thing and that's Big Oh. But there are actually different types of big o notation(like big omega, and big theta notations) and you can learn more about them [here](https://www.quora.com/What-is-the-difference-between-big-oh-big-omega-and-big-theta-notations).
