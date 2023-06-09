@@ -27,7 +27,7 @@ However it's also important to point out that the amount of memory a program use
 
 ---
 
-![Big O Notation Chart](.github/note_images/big-o-notation.png)
+![Big O Notation Chart](./note_images/big-o-notation.png)
 
 This chart helps to Visualize how when a function's input size increases, the number of operations required to complete the function increases ultimately increasing the time it takes to complete the function and create a complexity curve that can be used to determine the Big O Notation of the function.
 
