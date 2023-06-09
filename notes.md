@@ -19,3 +19,127 @@ This chart helps to Visualize how when a function's input size increases, the nu
 ### The Different Types of Big O Notation
 
 When we talk about big o notation, most of the time we are thinking and talking about the same thing and that's Big Oh. But there are actually different types of big o notation(like big omega, and big theta notations) and you can learn more about them [here](https://www.quora.com/What-is-the-difference-between-big-oh-big-omega-and-big-theta-notations).
+
+### Simplifying Big O Notation
+
+When writing Big O Notation, there are a few rules we can follow to simplify the notation.
+
+- **Rule 1**: Whenever we are calcuating the Big O Notation of a function, we always take the worst-case scenario. For example, in the code below
+
+  ```javascript
+  const array = [
+    "dory",
+    "bruce",
+    "marlin",
+    "nemo",
+    "gill",
+    "bloat",
+    "nigel",
+    "squirt",
+    "darla",
+    "hank",
+  ];
+  const findNemo = (arr) => {
+    for (let i = 0; i < arr.length; i++) {
+      console.log("running");
+      if (arr[i] === "nemo") {
+        console.log("found nemo!");
+      }
+    }
+  };
+
+  findNemo(array); // O(n) => Linear Time
+  ```
+
+  ```bash
+  # Output
+  running
+  running
+  running
+  found nemo!
+  running
+  running
+  running
+  running
+  running
+  running
+  ```
+
+  we could improve this by adding a break statement to the if statement so that the function stops running once it finds nemo. However, we are not concerned with the best-case scenario, because if nemo was at the end of the given array, the function would still have to iterate through the entire array to find nemo. Therefore, we are only concerned with the worst-case scenario, which is that nemo is at the end of the array. Causing the Big O Notation of the function to be O(n).
+
+  ```javascript
+  const findNemo = (arr) => {
+    for (let i = 0; i < arr.length; i++) {
+      console.log("running");
+      if (arr[i] === "nemo") {
+        console.log("found nemo!");
+        break;
+      }
+    }
+  };
+  ```
+
+  ```bash
+  # Output
+  running
+  running
+  running
+  found nemo!
+  ```
+
+- **Rule 2**: Whenever we are calcuating the Big O Notation of a function, we always drop the constants. For example, in the code below
+
+  ```javascript
+  const printFirstItemThenFirstHalfThenSayHi100times(arr) => {
+    console.log(arr[0]); // O(1) => Constant Time
+
+    const middleIndex = Math.floor(arr.length / 2);
+    let index = 0;
+
+    while (index < middleIndex) { // O(n/2) => Linear Time
+      console.log(arr[index]);
+      index++;
+    }
+
+    for (let i = 0; i < 100; i++) { // O(100) => Constant Time
+      console.log("hi");
+    }
+  }
+  ```
+
+  The Big O Notation of this function would be O(1 + n/2 + 100). However, we can simplify this to O(n) by dropping the constants because as the input size increases, the constants become insignificant and we are only concerned with the growth of the function.
+
+- **Rule 3**: Whenever we are calcuating the Big O Notation of a function, we always keep different terms for different inputs. For example, in the code below
+
+  ```javascript
+  const printAllNumbersThenAllPairSums = (arr1, arr2) => {
+    arr1.forEach((num) => {
+      console.log(num1);
+    });
+
+    arr2.forEach((num) => {
+      console.log(num);
+    });
+  };
+  ```
+
+  The Big O Notation of this function would be O(a + b) because we are iterating through two different arrays. However, we cannot simplify this to O(n) because we are iterating through two different arrays.
+
+- **Rule 4**: Whenever we are calcuating the Big O Notation of a function, we always drop the non-dominant terms. For example, in the code below
+
+  ```javascript
+  const printAllNumbersThenAllPairSums = (arr) => {
+    console.log("these are the numbers:");
+    arr.forEach((num) => console.log(num)); // O(n) => Linear Time
+
+    console.log("and these are their sums:");
+    arr.forEach((firstNum) => {
+      // O(n^2) => Quadratic Time
+      arr.forEach((secondNum) => {
+        console.log(firstNum + secondNum);
+      });
+    });
+  };
+  ```
+
+  The Big O Notation of this function would be O(n + n^2). However, we can simplify this to O(n^2) by dropping the non-dominant terms because as the input size increases, the non-dominant terms become insignificant and we are only concerned with the growth of the function.
