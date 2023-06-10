@@ -36,7 +36,7 @@ When bulding a data structure, we need to understand how a computer stores data.
 
 ### Different types of Data Structures in different languages
 
-![Data Structures in other languages](./note_images/types-of-data-structures-in-different-languages.png)
+![Data Structures in other languages](./images/types-of-data-structures-in-different-languages.png)
 
 ## What are the various operations that can be performed on different Data Structures?
 
